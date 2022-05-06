@@ -1,0 +1,15 @@
+.cart_img > img {
+  height: 200px;
+  width: 210px;
+}
+.total {
+  margin-left: 200px;
+}
+.cart_box {
+  display: flex;
+}
+.cart_box > div > button {
+  margin: 7px;
+  padding: 10px;
+  border-radius: 10px;
+}
