@@ -1,0 +1,47 @@
+
+
+
+
+
+.footer{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    height: 400px;
+}
+.footeritems{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: auto;
+    text-align: center;
+  
+}
+
+      
+
+
+li{
+    color: white;
+    overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  margin-left: 10px;
+    font-size: 7px;
+    
+
+}
+Link{
+    text-decoration: none;
+    
+}
+img{
+ margin-left: 45%;
+ 
+}
+.footerHeading{
+    color: yellow;
+    font-size: 10px;
+    margin-left: 10px;
+}
