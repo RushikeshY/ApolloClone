@@ -29,6 +29,7 @@ import React, { useState, useEffect } from "react";
 import Pharmacy from './Pharmacy/Pharmacy';
 import Navbar from "./Navbar/Navbar"
 import Cart from "./Pharmacy/Cart";
+import Mainroutes from "./Navbar/Mainroutes";
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -53,14 +54,19 @@ const App = () => {
   // }, [cart]);
 
   return (
-    <React.Fragment>
+
+    <>
+
+    <Mainroutes/>
+    {/* <React.Fragment>
       <Navbar setShow={setShow} size={cart.length} />
       {show ? (
         <Pharmacy handleClick={handleClick} />
       ) : (
         <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
-    </React.Fragment>
+    </React.Fragment> */}
+    </>
   );
 };
 

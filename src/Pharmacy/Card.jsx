@@ -1,9 +1,16 @@
 import React from "react";
-
-const Cards = ({ item, handleClick }) => {
-  // const { title, author, price, img } = item;
+import { Link } from "react-router-dom";
+// import { Details } from "./Details";
+const Cards = (item) => {
+  const { Name, Cost, url, id, Off } = item.item;
   // const {Name,Cost,url,} = el;
-  let amount = +(item.amount)
+  // let amount = +(item.amount)
+
+
+
+
+
+
 
   return (
     <div className="cards">
@@ -17,29 +24,45 @@ const Cards = ({ item, handleClick }) => {
         <button onClick={() => handleClick(item)}>Add to Cart</button>
       </div> */}
 
-
       {/* <div className="image_box"> */}
-        {/* <img src={item.url} alt="" />
+      {/* <img src={item.url} alt="" />
       </div>
       <div className="details">
         <p>{item.Name}</p>
         <p>{author}</p>
         <p>Price - {item.Cost}Rs</p> */}
 
-               <div id="data" >
-                    <div id="imgdiv">
-                        <img src={item.url} alt="" />
-                       
-                        <hr />
-                        <p>{item.Name}</p>
-                       <p id='p2'> Rs. {item.Cost}</p>
-                    </div>
-                   
-                    <div> 
-                    <button onClick={() => handleClick(item)}>Add to Cart</button>
-                    </div>
-                 
-               </div>
+      <div>
+        <div id="data">
+          <Link style={{ textDecoration: "none" }} to={`/pharmacy/${id}`}>
+            <div id="imgdiv">
+              <div style={{ display: "flex" }}>
+                <img src={url} alt="" />
+                <div
+                  style={{
+                    height: "35px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                    width: "35px",
+                    backgroundColor: "#ff960d",
+                    color: "white",
+                  }}
+                >
+                  -{Off}%
+                </div>
+              </div>
+
+              <hr />
+              <p id="p1">{Name}</p>
+              <p id="p2">MRP Rs. {Cost}</p>
+            </div>
+          </Link>
+           
+          <div>
+            {/* <button onClick={() => handleClick(item)}>Add to Cart</button> */}
+          </div>
+        </div>
+      </div>
 
       {/* </div> */}
     </div>

@@ -1,35 +1,64 @@
 import React,{useEffect,useState} from 'react'
 import Slider from '../Slider/Slider'
 import "./Pharmacy.css"
-import Navbar from '../Navbar/Navbar'
-import Data from "../Data.json"
-import Data1 from "../Data.json"
+
+// import Navbar from '../Navbar/Navbar'
+// import Data from "../Data.json"
+// import Data1 from "../Data.json"
 import Cards from './Card'
-import Data2 from "../Data.json"
-// import {Link} from "react-router-dom"
+// import Data2 from "../Data.json"
+import {Link} from "react-router-dom"
 // import ItemDetails from './ItemDetails'
-const Pharmacy = ({handleClick}) => {
+const Pharmacy = () => {
 
-  // const [details,setDetails]=useState([])
+  const [data,setData]=useState([])
 
-  // const getData=async()=>{
-  //   let res = await fetch("http://localhost:3000/Data")
-  //   let data=await res.json()
-  //   setDetails(data)
-  //   console.log(data)
+  const getData=async()=>{
+    let res = await fetch("http://localhost:8080/Data")
+    let data=await res.json()
+    setData(data)
+    console.log(data)
+  }
+  useEffect(()=>{ 
+    getData()
+  },[])
+  
+
+  const [data1,setData1]=useState([])
+
+  const getData1=async()=>{
+    let res = await fetch("http://localhost:8080/Data1")
+    let data1=await res.json()
+    setData1(data1)
+    console.log(data1)
+  }
+
+  useEffect(()=>{ 
+    getData1()
+  },[])
+  
+  // const [data2,setData2]=useState([])
+  
+  // const getData2=async()=>{
+  //   let res = await fetch("http://localhost:8080/Data2")
+  //   let data2=await res.json()
+  //   setData2(data2)
+  //   console.log(data2)
   // }
 
   // useEffect(()=>{ 
-  //   getData()
+  //   getData2()
   // },[])
+
+
  
-  // const handleClick=async(item)=>{
-  //   let res = await fetch("http://localhost:3000/Data",{
-  //     method:"POST",
-  //     headers:{'content-type':'application/json'},
-  //     body:JSON.stringify(item)
-  //   })
-  // }
+  const handleClick=async(item)=>{
+    let res = await fetch("http://localhost:8080/CartData",{
+      method:"POST",
+      headers:{'content-type':'application/json'},
+      body:JSON.stringify(item)
+    })
+  }
 
 
 
@@ -40,9 +69,9 @@ const Pharmacy = ({handleClick}) => {
 
 
   //  console.log(Data)
-  let data = Data.Data;
-  let data1 = Data1.Data1;
-  let data2 = Data2.Data2;
+  // let data = Data.Data;
+  // // let data1 = Data1.Data1;
+  // let data2 = Data2.Data2;
   // console.log(data)
   return (
     <div id="Pharmacy_Main_Div">
@@ -91,8 +120,40 @@ const Pharmacy = ({handleClick}) => {
          data.map((item,index)=>{
            return (
              <>
+     
+               {/* <Cards item={item} handleClick={handleClick} /> */}
+               <div id="data">
+          <Link style={{ textDecoration: "none" }} to={`/pharmacy/${item.id}`}>
+            <div id="imgdiv">
+              <div style={{ display: "flex" }}>
+                <img src={item.url} alt="" />
+                <div
+                  style={{
+                    height: "35px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                    width: "35px",
+                    backgroundColor: "#ff960d",
+                    color: "white",
+                  }}
+                >
+                  -{item.Off}%
+                </div>
+              </div>
+
+              <hr />
+              <p id="p1">{item.Name}</p>
+              <p id="p2">MRP Rs. {item.Cost}</p>
+            </div>
+          </Link>
+         <div> <button className='btn' onClick={()=>handleClick(item)}>Add To Cart</button></div>
+         
+          <div>
         
-               <Cards key={item.id} item={item} handleClick={handleClick} />
+            {/* <button onClick={() => handleClick(item)}>Add to Cart</button> */}
+          </div>
+        </div>
+             
              
              </>
            )
@@ -103,36 +164,44 @@ const Pharmacy = ({handleClick}) => {
     <h3>SUMMER ESSENTIALS</h3>
 
 <hr />
-    {/* <div id="o">
-    {
-         data1.map((el,index)=>{
-           return (
-             <>
-               <div id="data">
-                    <div id="imgdiv">
-                        <img src={el.url} alt="" />
-                        <hr />
-                        <p>{el.Name}</p>
-                       <p id='p2'> Rs. {el.Cost}</p>
-                    </div>
-                    
-                    <div>
-                    <button>Add To Cart</button>
-                    </div>
-                 
-               </div>
-             </>
-           )
-         })
-      }
-    </div> */}
+ 
     <div id="o">
     {
-         data1.map((item,index)=>{
+      data1.map((item)=>{
            return (
              <>
         
-               <Cards key={item.id} item={item} handleClick={handleClick} />
+               {/* <Cards item={item} handleClick={handleClick} /> */}
+               <div id="data">
+          <Link style={{ textDecoration: "none" }} to={`/pharmacy/${item.id}`}>
+            <div id="imgdiv">
+              <div style={{ display: "flex" }}>
+                <img src={item.url} alt="" />
+                <div
+                  style={{
+                    height: "35px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                    width: "35px",
+                    backgroundColor: "#ff960d",
+                    color: "white",
+                  }}
+                >
+                  -{item.Off}%
+                </div>
+              </div>
+
+              <hr />
+              <p id="p1">{item.Name}</p>
+              <p id="p2">MRP Rs. {item.Cost}</p>
+            </div>
+          </Link>
+            <div> <button className='btn' onClick={()=>handleClick(item)}>Add To Cart</button></div>
+          <div>
+        
+            {/* <button onClick={() => handleClick(item)}>Add to Cart</button> */}
+          </div>
+        </div>
              
              </>
            )
@@ -168,11 +237,43 @@ const Pharmacy = ({handleClick}) => {
     </div> */}
     <div id="o">
     {
-         data2.map((item,index)=>{
+         data.map((item)=>{
            return (
              <>
         
-               <Cards key={item.id} item={item} handleClick={handleClick} />
+             
+               {/* <Cards item={item} handleClick={handleClick} /> */}
+               <div id="data">
+          <Link style={{ textDecoration: "none" }} to={`/pharmacy/${item.id}`}>
+            <div id="imgdiv">
+              <div style={{ display: "flex" }}>
+                <img src={item.url} alt="" />
+                <div
+                  style={{
+                    height: "35px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                    width: "35px",
+                    backgroundColor: "#ff960d",
+                    color: "white",
+                  }}
+                >
+                  -{item.Off}%
+                </div>
+              </div>
+
+              <hr />
+              <p id="p1">{item.Name}</p>
+              <p id="p2">MRP Rs. {item.Cost}</p>
+            </div>
+          </Link>
+            <div> <button className='btn' onClick={()=>handleClick(item)}>Add To Cart</button></div>
+          <div>
+        
+            {/* <button onClick={() => handleClick(item)}>Add to Cart</button> */}
+          </div>
+        </div>
+             
              
              </>
            )
@@ -258,7 +359,38 @@ const Pharmacy = ({handleClick}) => {
            return (
              <>
         
-               <Cards key={item.id} item={item} handleClick={handleClick} />
+               {/* <Cards item={item} handleClick={handleClick} /> */}
+               <div id="data">
+          <Link style={{ textDecoration: "none" }} to={`/pharmacy/${item.id}`}>
+            <div id="imgdiv">
+              <div style={{ display: "flex" }}>
+                <img src={item.url} alt="" />
+                <div
+                  style={{
+                    height: "35px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                    width: "35px",
+                    backgroundColor: "#ff960d",
+                    color: "white",
+                  }}
+                >
+                  -{item.Off}%
+                </div>
+              </div>
+
+              <hr />
+              <p id="p1">{item.Name}</p>
+              <p id="p2">MRP Rs. {item.Cost}</p>
+            </div>
+          </Link>
+            <div> <button className='btn' onClick={()=>handleClick(item)}>Add To Cart</button></div>
+          <div>
+        
+            {/* <button onClick={() => handleClick(item)}>Add to Cart</button> */}
+          </div>
+        </div>
+             
              
              </>
            )
