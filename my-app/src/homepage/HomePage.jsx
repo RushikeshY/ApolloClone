@@ -190,6 +190,37 @@ const HomePage = () => {
                 />
             </Link>
             </div>
+
+            <div className="home3">
+                <div className="home3a">
+                    <div><p style={{fontSize:"15px"}}>HEALTH ARTICLES & RESOURCES</p>
+                 <p style={{fontSize:"7px"}}>Make better health choices with our curated blogs, videos and expert advice.</p>
+                    </div>
+                    <div><img style={{height:"25px",marginTop:"10px",marginRight:"35px"}} src="https://newassets.apollo247.com/images/h-medicine.svg" alt="" /></div>
+                </div>
+                <div className="home3b">
+                    <div><p style={{fontSize:"8px",fontWeight:"bolder"}}>HEALTH BLOG</p>
+                 <p style={{fontSize:"7px"}}>Explore healthcare content created every day by our experts.</p>
+                    </div>
+                    <div style={{fontSize:"7px",fontWeight:"bold",height:"10px",width:"100px",border:"2px solid whiteSmoke",borderRadius:"10px",marginTop:"15px",padding:"5px"}}>Read The Latest Articles</div>
+                </div>
+                 
+                 <div className="home3c">
+                    <div className="home3d">
+                        <div><img style={{height:"15px"}} src="https://newassets.apollo247.com/images/ic_psychologist.svg" alt="" /></div>
+                        <div><Link style={{textDecoration:"none",color:"#02475b",fontSize:"8px"}} to={"/"}>Health-tools</Link></div>
+                    </div>
+                    <div className="home3d">
+                        <div><img style={{height:"15px"}} src="https://assets.apollo247.com/images/ic_healthy_life.png" alt="" /></div>
+                        <div><Link style={{textDecoration:"none",color:"#02475b",fontSize:"8px"}} to={"/"}>Explore HealthyLife</Link></div>
+                    </div>
+                    <div className="home3d">
+                        <div><img style={{height:"15px"}} src="https://newassets.apollo247.com/images/apollo-kavach.png" alt="" /></div>
+                        <div><Link style={{textDecoration:"none",color:"#02475b",fontSize:"8px"}} to={"/"}>Explore the Apollo Kavach Program</Link></div>
+                    </div>
+                   
+                 </div>
+            </div>
             
             <div className="allparali" style={{background:"white",margin:"auto",width:"93%"}}>
             <h6 className="h612">
