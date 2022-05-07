@@ -142,6 +142,55 @@
 .shadow{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.home3{
+    height: 200px;
+    width: 92%;
+    border: 2px solid white;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.home3a{
+    height: 60px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: auto; 
+    justify-content: space-between;
+    background-color: #02475b;
+    color: white;
+  display: flex;
+}
+.home3b{
+    height: 60px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: auto; 
+    justify-content: space-between;
+    background-color:white;
+    color: #02475b;;
+   display: flex;
+}
+.home3c{
+    height: 60px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: auto; 
+    justify-content: space-around;
+    background-color:white;
+    color: #02475b;;
+   display: flex;
+}
+.home3d{
+    display: flex;
+    height: 25px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+    justify-content: space-around;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 
