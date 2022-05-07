@@ -517,21 +517,6 @@
   ],
   "CartData": [
     {
-      "id": "fc_5-MpLZNvtkOdSfySbC",
-      "url": "https://newassets.apollo247.com/pub/media/catalog/product/s/e/seb0100.jpg",
-      "Name": "Sebamed Baby Powder, 200 gm",
-      "text": "USV LTD",
-      "Consume": "TOPICAL",
-      "Return": "Not Returnable.",
-      "Expire": "Sep-2022",
-      "Ingredients": "Allantoin, Talc, Zinc Oxide, Olea Europaea Fruit Oil.",
-      "Benefits": "For delicate skin Reduces the effects of rubbing and chafing Contains olive oil that soothes skin and Allantoin that reduced irritation",
-      "Description": "Sebamed Baby Powder is a talc powder for babies that protects their skin from dryness",
-      "Cost": 587,
-      "amount": 1,
-      "Off": "11"
-    },
-    {
       "id": "qHhtLGNMomeazwKDR9dss",
       "Name": "Healthvit C-Vitan-Z Vitamin C & Zinc Chewable, 60 Tablets",
       "Cost": 150,
@@ -545,21 +530,6 @@
       "amount": 1,
       "url": "https://newassets.apollo247.com/pub/media/catalog/product/h/e/hea0481_1_.jpg",
       "Off": "40"
-    },
-    {
-      "id": "Bpbgv_aZg_UV4KsW6u4tl",
-      "Name": "GNC Women's Hair, Skin & Nails Beauty Basics, 120 Tablets",
-      "Cost": 1994,
-      "Description": "GNC Women's Hair, Skin & Nails Tablet is enriched with the goodness of 28 essential nutrients that provide nourishment for your skin, nails, and hair in the best possible way. It has biotin and collagen which are known to be beneficial in keeping your hair healthy, shiny, and strong. Collagen also helps to maintain the elasticity of your skin and keeps it radiant and glowi",
-      "Benefits": "Enriched with the goodness of 28 essential nutrients that are highly beneficial for your skin, hair, and nails. Biotin supports normal cell growth in hair, skin, and nails. Collagen supports the structure of healthy and glowing skin. Loaded with antioxidants that help reduce the damage caused by free radicals and keep skin looking young and radiant",
-      "Ingredients": "Minerals, Anti-caking agent (INS 460 (i), INS 470 (ii), INS 551), Vitamins, Binder (INS 468, INS 462), collagen hydrolyzed, Akoat – 512 (INS 464, INS 1521, INS 553(ii)), Bodying agent INS 201, citrus bioflavonoids, alpha-Lipoic acid, cranberry fruit concentrate, lutein, and zeaxanthin. ",
-      "Expire": "Sep-2022",
-      "Consume": "ORAL",
-      "text": "GUARDIAN HEALTHCARE SERVICES PVT LTD",
-      "Return": " Not Returnable",
-      "url": "https://newassets.apollo247.com/pub/media/catalog/product/w/o/women_hair_skin_nails_1.jpg",
-      "Off": "30",
-      "amount": 1
     }
   ]
 }
