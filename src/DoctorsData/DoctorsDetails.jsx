@@ -57,7 +57,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;`
     useEffect(()=>{
         const getData = async()=>{
             try{
-              let res = await fetch(`http://localhost:3000/apollo/${id}`)
+              let res = await fetch(`http://localhost:8080/apollo/${id}`)
               let data = await res.json() ;
               console.log(data) ;
               setDocData(data) ;

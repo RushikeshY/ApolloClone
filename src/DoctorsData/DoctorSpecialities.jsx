@@ -76,7 +76,7 @@ const DoctorSpecialities = () => {
     //>>>>>>>>>>>....Fetch Data grom db.json....<<<<<<<<<<<<<<<<//
 
     const getData =async () => {
-      let res = await fetch("http://localhost:3000/apollo")
+      let res = await fetch("http://localhost:8080/apollo")
       let data1 = await res.json()
        setData(data1)
     }
@@ -94,7 +94,7 @@ const DoctorSpecialities = () => {
     
         if(e.target.value==="LTH")
         {
-          let res = await fetch("http://localhost:3000/apollo")
+          let res = await fetch("http://localhost:8080/apollo")
           let data1 = await res.json()
           let newData = data1.sort((a,b)=>{
             return a.fee-b.fee;
@@ -104,7 +104,7 @@ const DoctorSpecialities = () => {
         }  
         else if(e.target.value==="HTL")
         {
-          let res = await fetch("http://localhost:3000/apollo")
+          let res = await fetch("http://localhost:8080/apollo")
           let data1 = await res.json()
           let newData = data1.sort((a,b)=>{
             return b.fee-a.fee;
@@ -114,7 +114,7 @@ const DoctorSpecialities = () => {
         }    
       else
         {
-          let res = await fetch("http://localhost:3000/apollo")
+          let res = await fetch("http://localhost:8080/apollo")
           let data1 = await res.json()
           let newData = data1.sort((a,b)=>{
             return b.experience-a.experience;
