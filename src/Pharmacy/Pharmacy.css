@@ -1,0 +1,448 @@
+#Pharmacy_Main_Div {
+  height: auto;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 7px;
+}
+
+#Navbar {
+  padding: 3px;
+  height: 98px;
+  width: 98%;
+
+  border-radius: 5px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.placeholder {
+  height: 52px;
+  width: 88%;
+  font-size: 22px;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 32px;
+  border-radius: 5px;
+  padding-left: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: rgb(8, 84, 114);
+  letter-spacing: 1.5px;
+}
+
+.placeholder::placeholder {
+  color: skyblue;
+}
+
+#slider {
+  display: flex;
+  padding: 20px;
+}
+
+#slider_right {
+  height: 318px;
+  width: 34%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#special_offer {
+  height: 50px;
+}
+
+#special_offer > p {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+#order1 {
+  display: flex;
+}
+
+.btn {
+  height: 37px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: #ff960d;
+  color: white;
+  border-radius: 5px;
+}
+
+#color {
+
+  height: 90%;
+
+  width: 90%;
+}
+
+.divflex {
+  display: flex;
+}
+
+.flex > img {
+  height: 37px;
+  width: 37px;
+}
+
+.flex > p {
+  font-size: 15px;
+  color: rgb(5, 54, 97);
+  font-weight: 500;
+}
+
+#imgdiv > div > img {
+  height: 100px;
+  width: 90px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+#imgdiv > #p1 {
+  font-size: 14px;
+  color: rgb(13, 57, 75);
+  padding: 10px;
+}
+
+#data > div {
+  width: 190px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+#data > div > button {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  height: 40px;
+  color: #ff960d;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#data > div > button:hover {
+  background-color: rgb(218, 219, 219);
+  padding: 5px;
+}
+
+#o {
+  display: flex;
+  overflow-x: scroll;
+
+  width: 100%;
+
+}
+
+#imgdiv {
+  height: 260px;
+
+  text-align: center;
+}
+
+#data {
+  margin: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#data:hover {
+  transition: 0.4s;
+  transform: rotate(1deg);
+}
+
+#popular_products {
+  height: 170px;
+  width: 100%;
+
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#popular_products {
+  display: grid;
+  grid-template-rows: repeat(auto, 170px);
+  grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+#popular_products > img {
+  height: 160px;
+  margin: 5px;
+}
+
+#popular_products > img:hover {
+  height: 160px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+#popular_products1 {
+  display: flex;
+  height: 170px;
+  width: 100%;
+
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#left {
+  width: 60%;
+  height: 150px;
+  background-color: skyblue;
+  margin: 10px;
+}
+
+#right {
+  width: 40%;
+  background-color: rgb(185, 235, 255);
+  margin-left: 10px;
+  height: 150px;
+  margin: 10px;
+}
+
+#Whatsapp {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(14, 37, 97);
+  position: fixed;
+  margin-left: 75.6%;
+  border-radius: 10px;
+
+  display: "block",
+}
+
+#Whatsapp > img {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+
+
+
+}
+
+#off {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+#imgdiv > p {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+#imgdiv > #p2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(5, 54, 97);
+}
+
+.flex {
+  display: flex;
+  width: 194px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 5px;
+}
+
+.flex > img {
+  margin: 10px;
+}
+
+#left {
+  display: flex;
+  background-color: rgb(37, 130, 161);
+  margin-left: 10px;
+}
+
+#left > div > p:first-child {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+hr {
+  padding-left: 10px;
+}
+
+#left > div {
+  margin-left: 10px;
+}
+
+#left > div > p:last-child {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+#left > img {
+  height: 90px;
+  width: 100px;
+  color: white;
+  background-color: white;
+  margin: 30px;
+}
+
+#right > div {
+  display: flex;
+}
+
+#right > p {
+  color: rgb(37, 130, 161);
+  font-size: 23px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: -30px;
+}
+
+#right > div > img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+#right > div > h5 {
+  font-size: 17px;
+  padding-left: 10px;
+  color: rgb(37, 130, 161);
+}
+
+#right > div > h4 {
+  font-size: 21px;
+  color: #ff960d;
+  padding-left: 50px;
+}
+
+#brands {
+  display: flex;
+  height: 100px;
+  width: 200px;
+}
+
+#brands > div {
+  height: 90px;
+  width: 180px;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#brands > div:hover {
+  transition: 0.4s;
+  transform: rotate(2deg);
+}
+
+#brands > div > img {
+  height: 50px;
+  width: 120px;
+  margin: 10px;
+}
+
+h3 {
+  color: rgb(8, 69, 90);
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+hr {
+  color: rgb(13, 77, 104);
+
+  margin: 10px;
+}
+
+Link {
+  text-decoration: none;
+}
+
+#details {
+  height: 0%;
+  width: 60%;
+  margin-left: 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#details_div1 > img {
+  height: 400px;
+  width: 400px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid rgb(13, 77, 104);
+}
+
+#secondDetails_Div {
+  width: 680px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 30px;
+  padding-left: 90px;
+  padding-right: 130px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 40px;
+  border-radius: 5px;
+}
+
+#right_half {
+
+  width: 420px;
+  margin-left: 40px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#price {
+  border: 1px solid rgb(13, 77, 104);
+  padding: 10px;
+  height: 300px;
+  width: 320px;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 5px;
+}
+
+#button1 {
+  height: 40px;
+  width: 260px;
+  background-color: #ff960d;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#offer {
+  width: 330px;
+  margin-left: 60px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.h4 {
+  font-size: 15px;
+  color: rgb(13, 77, 104);
+  padding-left: 20px;
+}
+
+.p {
+  padding-left: 20px;
+  color: rgb(13, 77, 104);
+}
+
+.Cart_page {
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 60%;
+}

@@ -1,0 +1,353 @@
+
+
+body{
+    padding: 10px;
+    margin: 0;
+
+}
+*{
+    font-family: IBM Plex Sans,sans-serif;
+
+} 
+
+
+
+#consultation{
+    background-color: white;
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+}
+
+#consultation > h3{
+    color: #107591;
+}
+
+#consultation > p{
+    color: #107591;
+}
+
+#consultation > div > i{
+    color: #05aa89;
+ 
+    padding: 4px;
+}
+
+#searchDoctors{
+    border: none;
+
+}
+
+#searchbar{
+    display: grid;
+    grid-template-columns: 4% 30%;
+    border-bottom: 2px solid black;
+    width: 90%;
+    border-color: #00b38e;
+}
+
+#cities{
+    padding: 5px;
+    display: inline-block;
+    gap: 20px;
+}
+
+#cities > button{
+    background-color: white;
+    border: 1px solid rgb(170, 168, 168);
+    border-radius: 6px;
+    color: #00b38e;
+    padding: 4px;
+    font-size:small;
+    margin-left: 15px;
+    width: 75px;
+}
+.para{
+    color: #064a53;
+    font-size: 18px;
+    position: relative;
+}
+
+#addvertise > img{
+    width: 90%;
+    height: 220px;
+}
+
+.consult_card_img{
+    width: 40px;
+    margin-top: -5%;
+}
+
+.subCard{
+
+    height: 230px;
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 1px 1px 20px grey;
+}
+
+.subCard > h3{
+    margin-top: 4%;
+    margin-bottom: 20px;
+    height: 22%;
+    font-size: 15px;
+}
+
+.subCard > h4{
+    color: rgb(128, 115, 115);
+    margin-top: 9%;
+    font-size: 14px;
+}
+
+.subCard > h5{
+    margin-top: -15px;
+    margin-bottom: 4%;
+}
+
+#consult_cards{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    gap: 3%;
+
+}
+.inside-flex{
+    display: flex;
+ 
+}
+.outside-flex{
+    display: flex;
+    background-color: white;
+    width: 93%;
+    height: 130px;
+    cursor:pointer;
+    gap: 10px;
+    padding: 1%;
+    border-radius: 4%;
+    box-shadow: 0px 0px 10px grey;
+    margin-top: -3%;
+}
+.outside-flex>div > img{
+    width: 50px;
+    margin-top: 30%;
+}
+.iconSetup{
+    margin-top: 40px;
+    margin-left: 22px;
+}
+.inside-text > p{
+    color: grey;
+    font-size: 14px;
+    margin-top: -7%;
+}
+.inside-text > h5{
+    font-size: 14px;
+}
+
+.inside-flex + hr{
+    width: 100%;
+    margin-top: -1%;
+}
+#Boxes{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 61% 61%;
+    gap: 2%;
+    padding: 1%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+.inside-flex + hr + h5{
+    margin-top: 0%;
+    font-size: 13px
+}
+
+#above{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: 100px;
+}
+#first > hr{
+    width: 100%;
+}
+
+#second-fir > #dott > li{
+    color: #0e5d74;
+
+}
+#second-thir > .info{
+    display: flex;
+    gap: 5%;
+}
+.info{
+    font-size: 14px;
+    color: #67919d;
+}
+#second{
+    background-color: white;
+    padding: 3%;
+    height: 800px;
+}
+#second > #second-fir{
+    color: #0e5d74;
+}
+#second > #second-sec{
+    color: #0e5d74;
+}
+#msgBoxPerson{
+    width: 50%;
+    height: 40px;
+    background-color: white;
+}
+#msgBoxCall{
+    width: 50%;
+    height: 40px;
+    background-color: white;
+}
+#thisToShow{
+    gap: 10%;
+    margin-top: 10%;
+}
+#thatToShow{
+    gap: 10%;
+    margin-top: 10%;
+}
+#thisToShow > h3{
+    font-size: small;
+}
+#thatToShow > h3{
+    font-size: small;
+}
+#thisToShow > img{
+    width: 25%;
+}
+#thatToShow > img{
+    width:25%;
+}
+#show{
+    margin-bottom: 10%;
+}
+#second > hr{
+    background-color: rgb(206, 199, 199);
+    size: 1px;
+}
+#second-fort > p{
+    color: #0e5d74;
+}
+
+#lastOfSecond{
+    display: flex;
+    gap: 10%;
+}
+#lastOfSecond > h4{
+    color: orange;
+}
+#lastOfSecond > img{
+    width: 50px;
+    height: 50px;
+}
+
+
+#below{
+    margin-top: 32%;
+    padding: 2%;
+    background-color: white;
+    margin-left: 100px;
+}
+
+#below h3{
+    font-size: 18px;
+    color: #0e5d74;
+}
+#below p{
+    color: #0e5d74;
+}
+#below ul li{
+    color: #0e5d74;
+    margin-bottom: 3%;
+}
+#below ul{
+    margin-top: 3%;
+}
+
+.faq-text{
+    color: #0e5d74;
+}
+
+#faq-main{
+    margin-top: 6%;
+    margin-left: 100px;
+}
+
+
+
+.faq{
+    max-width: 100%;
+
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    background-color: white;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.4rem;
+    padding-left: 1%;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+
+}
+
+.answer p{
+
+    line-height: 1.6;
+    font-size: 1.4rem;
+    padding: 2%;
+}
+
+.faq.active .answer{
+    max-height: fit-content;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+/* svg{
+    transition: transform 0.5s ease-in;
+} */
+
+/* @keyframes fade{
+    from{
+        opacity: 0;
+        transform: translate(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+} */
+
+
+.question > h3{
+    font-size: 18px;
+    color: #0e5d74;
+}
+
+.answer > p{
+    font-size: 15px;
+    color: #0e5d74;
+}
