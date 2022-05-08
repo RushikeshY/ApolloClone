@@ -1,7 +1,9 @@
 
 
 import React from "react";
-import Mainroutes from "./Navbar/Mainroutes";
+import MainRoutes from "./routes/MainRoutes";
+
+// import Mainroutes from "./Navbar/Mainroutes";
 
 const App = () => {
 
@@ -10,7 +12,10 @@ const App = () => {
 
     <>
 
-    <Mainroutes/>
+ 
+    <MainRoutes/>
+   
+       
 
     </>
   );

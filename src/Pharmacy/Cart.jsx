@@ -1,46 +1,43 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCartShopping,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+import { reload } from "firebase/auth";
 const Cart1 = () => {
   const [details, setDetails] = useState([]);
-
-  const getData = async () => {
-    let res = await fetch("http://localhost:8080/CartData");
-    let data = await res.json();
-    setDetails(data);
-    // console.log(data);
-  };
-
+  function getdata() {
+    setDetails(JSON.parse(localStorage.getItem("user")));
+  }
+ 
+  console.log(details)
   useEffect(() => {
-    getData();
+    getdata();
   }, []);
 
-  const onDelete = (id) => {
-    let newTodo = details.filter((item) => item.id !== id);
-    setDetails(newTodo);
-  };
-
-  const Delete = async (id) => {
-    try {
-      await fetch(`http://localhost:8080/CartData/${id} `, {
-        method: "DELETE",
-        headers: { "content-type": "application/json" },
-      });
-
-      console.log(2);
-      onDelete(id);
-    } catch (e) {
-      console.log(e);
-    }
-  };
+  function Delete(details, index) {
+    details.splice(index, 1);
+    localStorage.setItem("user", JSON.stringify(details));
+    window.location.reload();
+  }
 
   const [Cost, setCost] = useState(0);
-
+let TotalCost1=Math.ceil(Cost + Cost / 10 + Cost / 30)
   const handleCost = () => {
     let ans = 0;
     details.map((item) => (ans += item.amount * item.Cost));
     setCost(ans);
     console.log(Cost);
+  
   };
+
+    function TotalCost(){
+      localStorage.setItem("Cost", JSON.stringify( TotalCost1 ));
+    }
+
 
   useEffect(() => {
     handleCost();
@@ -58,20 +55,40 @@ const Cart1 = () => {
   return (
     <div>
       {/* <Navbar/> */}
-      <h3>My Cart</h3>
+      <div style={{ display: "flex" }}>
+        <FontAwesomeIcon
+          icon={faCartShopping}
+          style={{
+            fontSize: "22px",
+            padding: "15px",
+            paddingLeft: "50px",
+            color: "rgb(13, 77, 104)",
+          }}
+        />
+        <h3>My Cart</h3>
+      </div>
+
       <hr />
       <div style={{ display: "flex" }}>
+        <FontAwesomeIcon
+          icon={faLocationDot}
+          style={{
+            fontSize: "26px",
+            padding: "15px",
+            paddingLeft: "50px",
+            color: "rgb(13, 77, 104)",
+          }}
+        />
         <p className="p">Add address to confirm item availability</p>
-        <h4 style={{ color: "#ff960d", paddingLeft: "110px" }}>
-          + Login To Continue
-        </h4>
+        <h4 style={{ color: "#ff960d", paddingLeft: "110px" }}></h4>
       </div>
 
       <hr />
 
       <div style={{ display: "flex", width: "100%" }}>
         <div style={{ width: "70%" }}>
-          {details.map((item) => {
+        
+          {details.map((item, index) => {
             return (
               <div>
                 <div style={{ width: "160%" }}>
@@ -97,7 +114,7 @@ const Cart1 = () => {
                         <div style={{ width: "20%", marginLeft: "50px" }}>
                           <button
                             className="remove_btn"
-                            onClick={() => Delete(item.id)}
+                            onClick={() => Delete(details, index)}
                           >
                             Remove
                           </button>
@@ -115,7 +132,7 @@ const Cart1 = () => {
                         </h3>
                       </div>
                     </div>
-                    {/* <hr /> */}
+                
                   </div>
                 </div>
               </div>
@@ -140,8 +157,10 @@ const Cart1 = () => {
           <h3 style={{ fontSize: "22px", paddingLeft: "40px" }}>
             Amount To pay : Rs. {Math.ceil(Cost + Cost / 10 + Cost / 30)}
           </h3>
-
-          <button className="payment1">Proceed To Payment</button>
+             <Link to="/payment">
+             <button  onClick={ TotalCost()} className="payment1">Proceed To Payment</button>
+             </Link>
+        
           <hr />
         </div>
       </div>

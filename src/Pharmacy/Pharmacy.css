@@ -71,7 +71,7 @@
 }
 
 #color {
-  /* background-color: red; */
+
   height: 90%;
 
   width: 90%;
@@ -133,8 +133,7 @@
   overflow-x: scroll;
 
   width: 100%;
-  /* padding: 20px; */
-  /* margin: 30px; */
+
 }
 
 #imgdiv {
@@ -146,8 +145,6 @@
 #data {
   margin: 10px;
 
-  /* padding-left: 10px;
-    padding-right: 10px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -169,7 +166,7 @@
   grid-template-rows: repeat(auto, 170px);
   grid-template-columns: repeat(3, 1fr);
 
-  /* gap: 10px; */
+
 }
 
 #popular_products > img {
@@ -215,15 +212,19 @@
   width: 60px;
   background-color: rgb(14, 37, 97);
   position: fixed;
-  margin-left: 77%;
+  margin-left: 75.6%;
   border-radius: 10px;
+
+  display: "block",
 }
 
 #Whatsapp > img {
   height: 60px;
   width: 60px;
   border-radius: 10px;
-  /* border-radius: 50px; */
+
+
+
 }
 
 #off {
@@ -238,7 +239,8 @@
 }
 
 #imgdiv > #p2 {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: bold;
   color: rgb(5, 54, 97);
 }
 
@@ -355,7 +357,7 @@ h3 {
 
 hr {
   color: rgb(13, 77, 104);
-  /* height: .4px; */
+
   margin: 10px;
 }
 
@@ -392,7 +394,7 @@ Link {
 }
 
 #right_half {
-  /* height:900px; */
+
   width: 420px;
   margin-left: 40px;
 

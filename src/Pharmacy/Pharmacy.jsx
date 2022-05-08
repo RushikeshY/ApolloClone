@@ -2,44 +2,68 @@ import React, { useEffect, useState } from "react";
 import Slider from "../Slider/Slider";
 import "./Pharmacy.css";
 import { Link } from "react-router-dom";
+import Footer from "../Vivek/footer/Footer";
+import Data from "../Data.json"
+import Data1 from "../Data.json"
 
 const Pharmacy = () => {
-  const [data, setData] = useState([]);
+ console.log(1)
+  console.log(Data)
+// let data =  Data.Data;
+// let data1 = Data1.Data1
+  console.log(1)
+  const [data, setData] = useState(Data.Data);
+  
+  const [data1, setData1] = useState(Data1.Data1);
 
-  const getData = async () => {
-    let res = await fetch("http://localhost:8080/Data");
-    let data = await res.json();
-    setData(data);
-    console.log(data);
-  };
-  useEffect(() => {
-    getData();
-  }, []);
 
-  const [data1, setData1] = useState([]);
+  function showData(e){
+    localStorage.setItem("ProductData",JSON.stringify(e))
 
-  const getData1 = async () => {
-    let res = await fetch("http://localhost:8080/Data1");
-    let data1 = await res.json();
-    setData1(data1);
-    console.log(data1);
-  };
+  }
+  // const getData = async () => {
+  //   let res = await fetch("http://localhost:8080/Data");
+  //   let data = await res.json();
+  //   setData(data);
+  //   console.log(data);
+  // };
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
-  useEffect(() => {
-    getData1();
-  }, []);
+  // const [data1, setData1] = useState([]);
 
-  const handleClick = async (item) => {
-    let res = await fetch("http://localhost:8080/CartData", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(item),
-    });
-  };
+  // const getData1 = async () => {
+  //   let res = await fetch("http://localhost:8080/Data1");
+  //   let data1 = await res.json();
+  //   setData1(data1);
+  //   console.log(data1);
+  // };
+
+  // useEffect(() => {
+  //   getData1();
+  // }, []);
+
+  // const handleClick = async (item) => {
+  //   let res = await fetch("http://localhost:8080/CartData", {
+  //     method: "POST",
+  //     headers: { "content-type": "application/json" },
+  //     body: JSON.stringify(item),
+  //   });
+  // };
+  let arr = [];
+  const handleClick=(e)=>{
+ 
+    alert("Item Added To Cart")
+    arr.push(e)
+    localStorage.setItem("user",JSON.stringify(arr))
+
+    console.log(arr)
+        }
 
   return (
     <div id="Pharmacy_Main_Div">
-      <div id="Navbar"> </div>
+   
       <div style={{ display: "flex", gap: "30px", paddingLeft: "30px",color:"rgb(13, 77, 104)" }}>
         <div>Baby Care</div>
         <div>Health & Nutrition</div>
@@ -176,7 +200,7 @@ const Pharmacy = () => {
         {data.map((item, index) => {
           return (
             <>
-              <div id="data">
+              <div onClick={()=>showData(item)} id="data">
                 <Link
                   style={{ textDecoration: "none" }}
                   to={`/pharmacy/${item.id}`}
@@ -620,6 +644,7 @@ const Pharmacy = () => {
           services under our umbrella, you wouldn’t need to go anywhere else.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };

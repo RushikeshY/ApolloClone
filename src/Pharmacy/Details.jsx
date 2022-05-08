@@ -1,47 +1,22 @@
-// import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
 
-export const Details = () => {
+export const Details1 = () => {
   const [data, setData] = useState("");
 
-  const { id } = useParams();
-
+  function getdata() {
+    setData(JSON.parse(localStorage.getItem("ProductData")));
+  }
   useEffect(() => {
-    const getData = async () => {
-      try {
-        let res = await fetch(`http://localhost:8080/Data1/${id}`);
-
-        let data1 = await res.json();
-
-        console.log(data1);
-
-        setData(data1);
-        console.log(data1);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    getData();
+    getdata();
   }, []);
-
-  const handleClick = async () => {
-    let res = await fetch("http://localhost:8080/CartData", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(data),
-    });
-
-    console.log(data);
-  };
 
   return (
     <>
       (
       <>
-        <div key={id}>
+        <div>
           <div id="page_details" style={{ display: "flex" }}>
             <div id="details" style={{ display: "flex" }}>
               <div id="details_div1">
@@ -133,9 +108,7 @@ export const Details = () => {
                     <option value="">3</option>
                   </select>
                 </p>
-                <button id="button1" onClick={() => handleClick()}>
-                  Add To Cart
-                </button>
+                <button id="button1">Add To Cart</button>
                 <div></div>
               </div>
             </div>
