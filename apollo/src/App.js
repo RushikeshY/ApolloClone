@@ -6,8 +6,8 @@ import Payment from './Components/Payment';
 function App() {
   return (
     <div className="App">
-      <Doctor/>
-      {/* <Payment/> */}
+      {/* <Doctor/> */}
+      <Payment/>
     </div>
   );
 }

@@ -36,6 +36,7 @@ const Doctor = () => {
     const showthat =()=>{
         setInputToggle(true);
     }
+    
   return (
     <div className="main">
         <hr />
