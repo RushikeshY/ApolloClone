@@ -59,7 +59,7 @@ function Login() {
         })
         .catch((error) => {});
     } else {
-      alert("Invalid Otp");
+      alert("Invalid OTP");
     }
   };
 
@@ -140,7 +140,7 @@ function Login() {
                   fontSize: "17px",
                 }}
                 type="Number"
-                placeholder="Enter Otp"
+                placeholder="Enter OTP"
                 onChange={otpChange}
                 required
               />
@@ -161,7 +161,7 @@ function Login() {
               <div></div>
             </div>
 
-            <a href="/" style={{color:"#ff960d",fontSize:"18px",paddingTop:"20px"}}>Resend Otp</a>
+            <a href="/" style={{color:"#ff960d",fontSize:"18px",paddingTop:"20px"}}>Resend OTP</a>
             <br />
 
             <button
@@ -176,7 +176,7 @@ function Login() {
                   marginTop:"14px"
 
               }}
-            >Get Otp On Call</button>
+            >Get OTP On Call</button>
           </div>
         )}
 
