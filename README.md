@@ -2,7 +2,7 @@
 Collaborator :
 This is a collaborative Project from Masai School in the Construct Week by FW-16 and FW-14 batch students. We are five members of the team:
 
-1. Abhishek
+1.Abhishek
 2.Rushikesh
 3. Alim
 4. Vivek
@@ -30,4 +30,4 @@ Medium
 
 Big Thanks..
 Thank You MasaiSchool
-Thank You
+
