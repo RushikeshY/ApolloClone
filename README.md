@@ -23,10 +23,10 @@ For Frontend -React,Javascript , ES6
 For database -Local storage,Mock-server
 
 Netlify Link :
-Netlify
+https://dapper-chebakia-d4e762.netlify.app/
 
 Blog Link :
-Medium
+https://medium.com/@alimabbas44891/clone-of-apollo247-com-baf0ac28ec32
 
 Big Thanks..
 Thank You MasaiSchool
