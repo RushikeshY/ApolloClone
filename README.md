@@ -17,7 +17,7 @@ This is a collaborative Project from Masai School in the Construct Week by FW-16
 Firstly let’s know about Apollo. It has emerged as Asia’s foremost integrated healthcare services provider and has a robust presence across the healthcare ecosystem, including Hospitals, Pharmacies, Primary Care & Diagnostic Clinics and several retail health models. Apollo Hospitals was established in 1983 by Dr. Prathap C Reddy, renowned as the architect of modern healthcare in India.
 
 ## Snapshot :
-<img src="https://static.c.realme.com/IN/thread/1362492550103035904.jpg" style="width:60%;height:auto">
+<img src="https://static.c.realme.com/IN/thread/1362492550103035904.jpg" style="width:40%;height:90%">
 ## Challenges :
 During the project, we divided our work among ourselves and we played our part very well.
 
