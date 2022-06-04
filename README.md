@@ -19,7 +19,8 @@ Firstly let’s know about Apollo. It has emerged as Asia’s foremost integrate
 ## Snapshot :
 <img src="https://static.c.realme.com/IN/thread/1362492550103035904.jpg" style="width:40%;height:90%">
 ![Apollo Pharmacypage](https://user-images.githubusercontent.com/99671890/171989871-c2531930-3a78-4917-b72d-739c54e92de5.png)
-![apllo Pharmacypage](https://user-images.githubusercontent.com/99671890/171990089-5ca485da-c335-4483-ba53-8fe957f5334c.png)
+![Apollo doctor_consult page](https://user-images.githubusercontent.com/99671890/171990118-0356252f-a1bc-4114-820c-2ae38526aec3.png)
+
 
 ## Challenges :
 During the project, we divided our work among ourselves and we played our part very well.
